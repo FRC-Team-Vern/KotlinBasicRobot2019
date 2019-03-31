@@ -13,7 +13,7 @@ This example involves building and deploying Kotlin sources. This gives a baseli
 
 #### Intellij Deploy Project:
 
-<img src="images/GradleBuild.PNG?raw=true" width="400"/>
+<img src="images/GradleDeploy.PNG?raw=true" width="400"/>
 
 #### Example Usage:
 
