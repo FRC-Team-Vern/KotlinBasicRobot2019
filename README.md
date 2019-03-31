@@ -8,11 +8,12 @@ This example involves building and deploying Kotlin sources. This gives a baseli
 **We still recommend using Intellij for Kotlin development since at least at this point it appears to have the best Kotlin support.**
 
 Intellij Build Project:
-<img src="images/GradleBuild.PNG" width="100"/>
+
+<img src="images/GradleBuild.PNG" width="250"/>
 
 Intellij Deploy Project:
-![Alt text](images/GradleBuild.PNG?raw=true "Gradle Build Example")
 
+<img src="images/GradleBuild.PNG?raw=true" width="250"/>
 
 Example Usage:
 
