@@ -18,7 +18,7 @@ This example involves building and deploying Kotlin sources. This gives a baseli
 #### Example Usage:
 
 - "Example Single Command" launches ExampleFirstCommand which is an InstantCommand.
-- "Example Command Group" launches ExampleFirstCommand which then launches ExampleSecondCommand which is a command that does not finish normally, but there is a 3-second timeout in the CommanGroup.
+- "Example Command Group" launches ExampleFirstCommand which then launches ExampleSecondCommand which is a command that does not finish normally, but there is a 3-second timeout in the CommandGroup.
 - "Example Boolean" has been set to a Button to allow us to switch between either calling ExampleFirstCommand or ExampleSecondCommand.
 - "Example Conditional Command" calls either the ExampleFirstCommand or the ExampleSecondCommand based on the ExampleBoolean value.
 
