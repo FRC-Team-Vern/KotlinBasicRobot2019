@@ -3,10 +3,7 @@ package frc.team5461.robot
 import edu.wpi.first.wpilibj.TimedRobot
 import edu.wpi.first.wpilibj.command.Scheduler
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard
-import frc.team5461.robot.commands.ExampleCommandGroup
-import frc.team5461.robot.commands.ExampleConditionalCommand
-import frc.team5461.robot.commands.ExampleFirstCommand
-import frc.team5461.robot.commands.ExampleSecondCommand
+import frc.team5461.robot.commands.*
 import frc.team5461.robot.subsystems.ExampleSubsystem
 
 class Robot : TimedRobot() {
@@ -21,10 +18,12 @@ class Robot : TimedRobot() {
         SmartDashboard.putData("Example Command Group", ExampleCommandGroup())
         SmartDashboard.putBoolean("Example Boolean", false)
         SmartDashboard.putData("Example Conditional Command", ExampleConditionalCommand(ExampleFirstCommand(), ExampleSecondCommand()))
+        SmartDashboard.putData("CommandLogDecorator Command", CommandLogDecorator(ExampleSecondCommand(), executePrint = false))
     }
 
     override fun robotPeriodic() {
         exampleBoolean = SmartDashboard.getBoolean("Example Boolean", false)
+        Scheduler.getInstance().run()
     }
 
     override fun disabledInit() {
@@ -40,6 +39,6 @@ class Robot : TimedRobot() {
     }
 
     override fun teleopPeriodic() {
-        Scheduler.getInstance().run()
+//        Scheduler.getInstance().run()
     }
 }

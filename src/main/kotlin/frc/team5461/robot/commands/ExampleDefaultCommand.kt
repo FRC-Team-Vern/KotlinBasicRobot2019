@@ -16,4 +16,12 @@ class ExampleDefaultCommand : Command() {
     override fun isFinished(): Boolean {
         return false
     }
+
+    override fun end() {
+        println("INFO: end ExampleDefaultCommand")
+    }
+
+    override fun interrupted() {
+        println("INFO: interrupted ExampleDefaultCommand")
+    }
 }

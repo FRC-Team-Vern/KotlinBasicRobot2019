@@ -13,6 +13,10 @@ class ExampleSecondCommand : Command() {
         println("INFO: initialize ExampleSecondCommand")
     }
 
+    override fun execute() {
+//        println("INFO: execute ExampleSecondCommand")
+    }
+
     override fun isFinished(): Boolean {
         return false
     }
